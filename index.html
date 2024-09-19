@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="description"
         content="Implicit Contact Diffuser: Sequential Contact Reasoning with Latent Point Cloud Diffusion">
-  <meta name="keywords" content="ICD, Contact Diffusion">
+  <meta name="keywords" content="Robotic manipulation, Contact Reasoning, Deformable Object">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Implicit Contact Diffuser: Sequential Contact Reasoning with Latent Point Cloud Diffusion</title>
 
@@ -105,6 +105,7 @@
 
           <div class="is-size-5 publication-authors">
             <span class="author-block">University of Michigan</span>
+            <span class="author-block">* equal contributions</span>
           </div>
 
           <div class="column has-text-centered">
@@ -168,7 +169,7 @@
   </div>
 </section>
 
-<section class="hero teaser">
+<!-- <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video id="teaser" autoplay muted loop playsinline height="100%">
@@ -182,65 +183,8 @@
       </h2>
     </div>
   </div>
-</section>
-<!-- 
-
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
 </section> -->
+
 
 
 <section class="section">
@@ -274,7 +218,7 @@
     <!--/ Abstract. -->
 
     <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
+    <!-- <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
@@ -282,58 +226,136 @@
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
-    </div>
+    </div> -->
     <!--/ Paper video. -->
   </div>
 </section>
 
 
 <section class="section">
+  <h2 class="title is-3" style="text-align: center; padding-bottom: 10px;">Real-world Cable Routing</h2>
   <div class="container is-max-desktop">
 
     <div class="columns is-centered">
-
-      <!-- Visual Effects. -->
       <div class="column">
-        <!-- <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
+        <div class="content">
+          <h3 class="title is-4" style="text-align: center; padding-bottom: 10px;">Trial 1</h2>
+ 
+          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%" style="border-radius:10px; ">
+            <source src="static/videos/config0_run1.mp4" 
                     type="video/mp4">
           </video>
-        </div> -->
+        </div>
       </div>
-      <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-      <!-- <div class="column">
-        <h2 class="title is-3">Matting</h2>
+      <div class="column">
+        <h3 class="title is-4" style="text-align: center; padding-bottom: 10px;">Trial 2</h2>
         <div class="columns is-centered">
           <div class="column content">
-            <p>
+            <!-- <p>
               As a byproduct of our method, we can also solve the matting problem by ignoring
               samples that fall outside of a bounding box during rendering.
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
+            </p> -->
+            <video id="matting-video" autoplay controls muted loop playsinline height="100%" style="border-radius:10px; ">
+              <source src="static/videos/config0_run2.mp4"
                       type="video/mp4">
             </video>
           </div>
-
         </div>
-      </div> -->
-    </div>
-    <!--/ Matting. -->
-
-
-
       </div>
     </div>
-    <!--/ Animation. -->
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content">
+          <h3 class="title is-4" style="text-align: center; padding-bottom: 10px;">Trial 3</h2>
+ 
+          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%" style="border-radius:10px; ">
+            <source src="static/videos/config1_run0.mp4" 
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="column">
+        <h3 class="title is-4" style="text-align: center; padding-bottom: 10px;">Trial 4</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <video id="matting-video" autoplay controls muted loop playsinline height="100%" style="border-radius:10px; ">
+              <source src="static/videos/config1_run1.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content">
+          <h3 class="title is-4" style="text-align: center; padding-bottom: 10px;">Trial 5</h2>
+ 
+          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%" style="border-radius:10px; ">
+            <source src="static/videos/config2_run0.mp4" 
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="column">
+        <h3 class="title is-4" style="text-align: center; padding-bottom: 10px;">Trial 6</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <video id="matting-video" autoplay controls muted loop playsinline height="100%" style="border-radius:10px; ">
+              <source src="static/videos/config1_run1.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content">
+          <h3 class="title is-4" style="text-align: center; padding-bottom: 10px;">Trial 7</h2>
+ 
+          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%" style="border-radius:10px; ">
+            <source src="static/videos/config3_run0.mp4" 
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="column">
+        <h3 class="title is-4" style="text-align: center; padding-bottom: 10px;">Trial 8</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <video id="matting-video" autoplay controls muted loop playsinline height="100%" style="border-radius:10px; ">
+              <source src="static/videos/config3_run1.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content">
+          <h3 class="title is-4" style="text-align: center; padding-bottom: 10px;">Trial 9</h2>
+ 
+          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%" style="border-radius:10px; ">
+            <source src="static/videos/config4_run0-2.mp4" 
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="column">
+        <h3 class="title is-4" style="text-align: center; padding-bottom: 10px;">Trial 10</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <video id="matting-video" autoplay controls muted loop playsinline height="100%" style="border-radius:10px; ">
+              <source src="static/videos/config4_run1.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 
