@@ -362,7 +362,40 @@
   </div>
 </section>
 
+<section class="section">
+  <h2 class="title is-3" style="text-align: center; padding-bottom: 10px;">Comparison of different subgoal representations</h2>
+  <div class="container is-max-desktop">
+           <p>
+      When planning with point cloud-based subgoals, the MPC gets stuck at local minima. The cable is placed on the wrong side of the fixtures.
+       The NDF point cloud better captures the contact relationships.
+            </p>
+    <div class="columns is-centered">
 
+      <div class="column">
+        <div class="content">
+          <h3 class="title is-4" style="text-align: center; padding-bottom: 10px;">Pointcloud </h2>
+ 
+          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%" style="text-align: center;border-radius:10px; ">
+            <source src="static/videos/sim_pc_subgoal.mp4" 
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="column">
+        <h3 class="title is-4" style="text-align: center; padding-bottom: 10px;">NDF pointcloud</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+           
+            <video id="matting-video" autoplay controls muted loop playsinline height="100%" style="text-align: center; border-radius:10px; ">
+              <source src="static/videos/sim_icd.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> 
 <!-- <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
