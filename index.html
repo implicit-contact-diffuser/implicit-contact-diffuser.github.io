@@ -98,7 +98,7 @@
               <a >Yating Lin</a><sup>*</sup>,
             </span>
             <span class="author-block">
-              <a href="https://berenson.robotics.umich.edu/">Dmitry Berenson</a>,
+              <a href="https://berenson.robotics.umich.edu/">Dmitry Berenson</a>
             </span>
             <span class="author-block">
           </div>
@@ -192,6 +192,12 @@
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
+        <td>
+          <br>
+          <div class="columns is-centered has-text-centered">
+            <img src="static/images/teaser.png" style="width: 100%;" alt="teaser">
+          </div>
+        </td>
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
@@ -214,6 +220,8 @@
           </p>
         </div>
       </div>
+
+      
     </div>
     <!--/ Abstract. -->
 
@@ -299,7 +307,7 @@
         </div>
       </div>
       <div class="column">
-        <h3 class="title is-4" style="text-align: center; padding-bottom: 10px;">Trial 6</h2>
+        <h3 class="title is-4" style="text-align: center; padding-bottom: 10px;">Trial 6 (failed)</h2>
         <div class="columns is-centered">
           <div class="column content">
             <video id="matting-video" autoplay controls muted loop playsinline height="100%" style="border-radius:10px; ">
@@ -365,37 +373,68 @@
 <section class="section">
   <h2 class="title is-3" style="text-align: center; padding-bottom: 10px;">Comparison of different subgoal representations</h2>
   <div class="container is-max-desktop">
-           <p>
+    <p>
       When planning with point cloud-based subgoals, the MPC gets stuck at local minima. The cable is placed on the wrong side of the fixtures.
-       The NDF point cloud better captures the contact relationships.
-            </p>
+      The NDF point cloud better captures the contact relationships.
+    </p>
     <div class="columns is-centered">
-
       <div class="column">
         <div class="content">
-          <h3 class="title is-4" style="text-align: center; padding-bottom: 10px;">Pointcloud </h2>
- 
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%" style="text-align: center;border-radius:10px; ">
-            <source src="static/videos/sim_pc_subgoal.mp4" 
-                    type="video/mp4">
-          </video>
+          <h3 class="title is-4" style="text-align: center; margin-top: 20px; padding-bottom: 10px;">Point cloud (position-based)</h3>
+          <div style="display: flex; justify-content: center;">
+            <video id="dollyzoom" autoplay controls muted loop playsinline height="100%" style="border-radius: 10px;">
+              <source src="static/videos/sim_pc_subgoal.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
       </div>
       <div class="column">
-        <h3 class="title is-4" style="text-align: center; padding-bottom: 10px;">NDF pointcloud</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-           
-            <video id="matting-video" autoplay controls muted loop playsinline height="100%" style="text-align: center; border-radius:10px; ">
-              <source src="static/videos/sim_icd.mp4"
-                      type="video/mp4">
+        <h3 class="title is-4" style="text-align: center; margin-top: 20px; padding-bottom: 10px;">NDF point cloud (contact-based)</h3>
+        <div class="content">
+          <div style="display: flex; justify-content: center;">
+            <video id="matting-video" autoplay controls muted loop playsinline height="100%" style="border-radius: 10px;">
+              <source src="static/videos/sim_icd.mp4" type="video/mp4">
             </video>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section> 
+</section>
+
+<section class="section"></section>
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+   
+        <h2 class="title is-3">Method</h2>
+        <div class="content has-text-justified">
+          <p>
+            We transform raw object and scene point cloud to latent space using a contact-aware neural descriptor field (NDF) model. The NDF point clouds captures contact relationship between the objects and the environments.
+          </p>
+        </div>
+
+        <td>
+          <br>
+          <div class="columns is-centered has-text-centered">
+            <img src="static/images/ndf_training.png" style="width: 100%;" alt="teaser">
+          </div>
+        </td>
+        <div class="content has-text-justified">
+          <p>Then, conditoned on current state, goal state and the scene, we train a latent point cloud diffusion model to generate future contact sequence represented by NDF point clouds. We use sampling-based MPC to track the contact sequence and reach the goal specification.</p>
+        
+        <td>
+          <br>
+          <div class="columns is-centered has-text-centered">
+            <img src="static/images/system.png" style="width: 100%;" alt="teaser">
+          </div>
+      </div>
+
+      
+    </div>
+  </div>
+</section>
 <!-- <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
